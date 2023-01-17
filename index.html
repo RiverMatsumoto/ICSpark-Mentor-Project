@@ -10,7 +10,10 @@
 <body>
     <h1 id="title">Zoo Animals!</h1>
     <div class="split left">
-        <img src="images/zoo_background.jpg" alt="zoo" id="zoo-background">
+        <div class="frame">
+            <img src="images/zoo_background.jpg" alt="zoo" id="zoo-background">
+            <img src="" alt="animal" id="animal-image">
+        </div>
     </div>
 
     <div class="split right">
@@ -27,7 +30,7 @@
             <span class="information" id="animal-has-tail"></span>
             <br>
 
-            <div class="label">Weight: </div>
+            <div class="label">Weight (lbs): </div>
             <span class="information" id="animal-weight"></span>
             <br>
 
@@ -43,10 +46,10 @@
             <span class="information" id="animal-fun-fact"></span>
             <br>
 
-            <button id="move-left"><</button>
-            <button id="move-right">></button>
+            <button class="change-animal-button" id="move-left"><</button>
+            <button class="change-animal-button" id="move-right">></button>
             <br>
-            <button>Play Animal's Noise</button>
+            <button id="play-noise">Play Animal's Noise</button>
         </div>
     </div>
 
