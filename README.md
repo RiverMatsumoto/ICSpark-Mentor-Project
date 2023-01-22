@@ -107,7 +107,7 @@ Now add about 3 to 5 more animals to the animalList array by repeating the steps
 
 This I have already written some of the functions that we will call when the buttons are pressed. All we need is a way to move to the left and right of the array to display a different animal, and connect the "Play Animal Noise" button to the MakeSound function on the current animal being displayed.
 
-You can write the code starting anywhere in the javascript file.
+**You can write the code starting anywhere after where the animal objects are created**
 
 1. Get a reference to the "move-left" button
    1. `let moveLeftButton = document.getElementById("move-left");`
