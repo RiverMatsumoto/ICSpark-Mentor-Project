@@ -1,6 +1,5 @@
-// All animals
-
-elephant = {
+// Example of an elephant
+let elephant = {
     name: "Elephant",
     numLegs: 4,
     hasTail: true,
@@ -15,55 +14,6 @@ elephant = {
     }
 }
 
-giraffe = {
-    name: "Giraffe",
-    numLegs: 4,
-    hasTail: true,
-    weight: 2000,
-    height: "18\"0'",
-    habitat: "Plains",
-    funFact: "Has a blue tongue",
-    imageLink: "https://i.pinimg.com/originals/f8/b9/9e/f8b99eda710776f5deb5171b4df3804b.png",
-
-    MakeSound() {
-        alert("MROOOO, MROOOO");
-    }
-}
-
-monkey = {
-    name: "Monkey",
-    numLegs: 2,
-    hasTail: true,
-    weight: 200,
-    height: "4\"8'",
-    habitat: "Jungle",
-    funFact: "Sleeps while sitting in trees",
-    imageLink: "https://i.pinimg.com/originals/cf/f0/f4/cff0f443c5f794a54e105e11e133b6e3.png",
-
-    MakeSound() {
-        alert("OO OO AH AH");
-    }
-}
-
-// create list or array to store the animals
-let animalList = [];
-animalList.push(elephant);
-animalList.push(giraffe);
-animalList.push(monkey);
-let currentAnimalIndex = 0;
-let currentAnimal = animalList[currentAnimalIndex];
-
-// Add listeners to the move left and right buttons
-moveLeftButton = document.getElementById("move-left");
-moveLeftButton.onclick = MoveLeft;
-
-moveRightButton = document.getElementById("move-right");
-moveRightButton.onclick = MoveRight;
-
-// Add listener to the play-noise button
-makeSoundButton = document.getElementById("play-noise");
-makeSoundButton.onclick = MakeSound;
-
 // Get references to HTML tags:
 animalImage = document.getElementById("animal-image");
 animalName = document.getElementById("animal-name");
@@ -74,12 +24,12 @@ height = document.getElementById("animal-height");
 habitat = document.getElementById("animal-habitat");
 funFact = document.getElementById("animal-fun-fact");
 
-UpdateAnimalData();
-
+// This function calls the "MakeSound" function that the animal has
 function MakeSound() {
     currentAnimal.MakeSound();
 }
 
+// This function moves the current animal "cursor" or "index" to the left
 function MoveLeft() {
     if (currentAnimalIndex > 0) {
         currentAnimalIndex--;
@@ -87,6 +37,7 @@ function MoveLeft() {
     }
 }
 
+// This function moves the current animal "cursor" or "index" to the right
 function MoveRight() {
     if (currentAnimalIndex + 1 < animalList.length) {
         currentAnimalIndex++;
@@ -94,6 +45,7 @@ function MoveRight() {
     }
 }
 
+// This function updates the animal data on the Document Object Model (DOM) aka the webpage
 function UpdateAnimalData() {
     currentAnimal = animalList[currentAnimalIndex];
     animalImage.src = currentAnimal.imageLink;
