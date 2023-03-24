@@ -2,10 +2,11 @@
 
 Go to this link to view the final example project: https://rivermatsumoto.github.io/ICSpark-Mentor-Project/
 
-# TEMPLATE CODE (IMPORTANT)
+# Template Code (Important)
 
-GO TO THIS LINK FOR THE TEMPLATE FILES TO USE!: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/tree/template
+Link to template github page: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/tree/template
 
+Below this line is the code you will copy before you start the project:
 HTML template: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/index.html
 CSS template: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/style.css
 Javascript template (normal): 
