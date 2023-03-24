@@ -2,6 +2,15 @@
 
 Go to this link to view the final example project: https://rivermatsumoto.github.io/ICSpark-Mentor-Project/
 
+# TEMPLATE CODE (IMPORTANT)
+
+GO TO THIS LINK FOR THE TEMPLATE FILES TO USE!: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/tree/template
+
+HTML template: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/index.html
+CSS template: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/style.css
+Javascript template (normal): 
+Javascript template (harder): https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/app.js
+
 ## Description
 
 Create animal exhibits for your zoo! The idea of the project is to create animals for your zoo such that you can add as many animals as you want.
@@ -10,11 +19,12 @@ In this project you will practice using Javascript objects, data types, and a li
 
 ## Difficulty
 
-Intermediate
+Intermediate (Copy the code for step 3)
+Advanced (Write the code on your own for step 3)
 
 ## Prerequisites
 
-* Functions
+* Javascript: Functions, Types, Objects
 * HTML/DOM
 * Events (buttons -> call function)
 
@@ -103,11 +113,11 @@ Congratulations! You just added a new animal exhibit to your zoo!
 
 Now add about 3 to 5 more animals to the animalList array by repeating the steps above and then we will go over how to navigate each exhibit.
 
-### 3. Navigating the exhibit
+### 3a. Navigating the exhibit (Normal Version)
 
-This I have already written some of the functions that we will call when the buttons are pressed. All we need is a way to move to the left and right of the array to display a different animal, and connect the "Play Animal Noise" button to the MakeSound function on the current animal being displayed.
+If you would like a challenge to practice your javascript skills you can practice doing it on your own at the harder version step 3b
 
-**You can write the code starting anywhere after where the animal objects are created**
+I have already written some of the functions that we will call when the buttons are pressed. All we need is a way to move to the left and right of the array to display a different animal, and connect the "Play Animal Noise" button to the MakeSound function on the current animal being displayed.
 
 1. Get a reference to the "move-left" button
    1. `let moveLeftButton = document.getElementById("move-left");`
@@ -121,10 +131,25 @@ This I have already written some of the functions that we will call when the but
    3. play-noise -> MakeSound()
    4. Example: `moveLeftButton.onclick = MoveLeft;`
 
-I highly encourage you try to read the code in those functions that are already there so that you can better understand how it moves the cursor and then updates what the information about the animal on the webpage.
+### 3b. Navigating the exhibit (Harder Version)
 
+I have already written some of the functions that we will call when the buttons are pressed. All we need is a way to move to the left and right of the array to display a different animal, and connect the "Play Animal Noise" button to the MakeSound function on the current animal being displayed.
 
-Great! Now we set up our navigation and we got our exhibits going! That is pretty much it to setting up the zoo exhibit. 
+**You must write the code starting anywhere after where the animal objects are created from step 2**
+**This is important because if we try to display animals before they exist, the page will break!** 
+
+1. Get a reference to the "move-left" button
+2. Get a reference to the "move-right" button
+3. Get a reference to the "play-noise" button
+4. Hook up the onclick event of the button to the corresponding functions:
+   1. move-left -> MoveLeft()
+   2. move-right -> MoveRight()
+   3. play-noise -> MakeSound()
+   4. Example: `moveLeftButton.onclick = MoveLeft;`
+
+I highly encourage you try to read the code in the functions MoveLeft() and MoveRight() that are already there so that you can better understand how it moves the cursor and then updates the information about the animal on the webpage.
+
+Great! Now we set up our navigation and we got our exhibits going! That is pretty much it to setting up the zoo exhibit.
 
 ## Stretch Goals
 
@@ -134,3 +159,4 @@ There are a lot of new features you could add on your own if you have extra time
    1. This requires editing HTML, CSS, and JS files
 2. Add a new functionality to your animal besides playing their noise.
    1. This requires adding a button to the HTML and then hooking up that button to a new function on your animal similar to how it is set up currently with the play noise button.
+3. Play around with the css and decorate it however you want!
