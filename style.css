@@ -62,7 +62,7 @@ body
     border-style: inset;
     border-color: rgb(109, 73, 7);
     border-width: 5px;
-    width: 20%;
+    width: 100px;
 }
 
 .change-animal-button:hover
@@ -92,7 +92,7 @@ body
     border-style: inset;
     border-color: rgb(109, 73, 7);
     border-width: 5px;
-    width: 40%;
+    width: 90%;
 }
 
 #play-noise:hover
