@@ -9,8 +9,8 @@ Link to template github page: https://github.com/RiverMatsumoto/ICSpark-Mentor-P
 Below this line is the code you will copy before you start the project:
 HTML template: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/index.html
 CSS template: https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/style.css
-Javascript template (normal): 
-Javascript template (harder): https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/app.js
+Javascript template (normal): https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/app_normal.js
+Javascript template (harder): https://github.com/RiverMatsumoto/ICSpark-Mentor-Project/blob/template/script.js
 
 ## Description
 
